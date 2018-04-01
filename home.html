@@ -13,14 +13,13 @@
   <body style="margin:0px;overflow:hidden">
 <a-scene embedded arjs>
 
-
-<a-marker preset='hiro'>
   <a-assets>
-
-  <video id='#video' autoplay loop=true src='./assets/natoja.mp4'/>
+  <video id='video' autoplay loop=true src='./assets/natoja.mp4'/>
   </a-assets>
-  <a-video src="#video" width='16' height='9' position='0 1 -1'> </a-video>
+<a-marker preset='hiro'>
+  <a-video src="#video" width='10' height='6' position='0 1 -1'> </a-video>
 </a-marker>
+<a-entity camera></a-entity>
 </a-scene>
 
   </body>
