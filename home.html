@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Augmented Reality</title>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     </script>
     <script type="text/javascript" src="./assets/ar.js">
     </script>
   </head>
   <body style="margin:0px;overflow:hidden">
-<a-scene embedded arjs>
+<a-scene embedded arjs='trackingMethod: best;'>
 
   <a-assets>
-  <img id="video" src="./assets/nato.jpg" />
+  <video id="video" autoplay loop='true' muted= src="./assets/natoja.mp4" />
   </a-assets>
 <a-marker preset='hiro'>
-  <a-image src="#video" width="300" height="120" position="0 1 -1"> </a-image>
+  <a-video src="#video" width="3" height="1.2" position="0 1 0"> </a-video>
 </a-marker>
 <a-entity camera></a-entity>
 </a-scene>
