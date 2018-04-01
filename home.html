@@ -14,10 +14,10 @@
 <a-scene embedded arjs>
 
   <a-assets>
-  <video id='video' autoplay loop=true src='./assets/natoja.mp4'/>
+  <video id="video" autoplay loop="true" src="assets/natoja.mp4" webkit-playsinline />
   </a-assets>
 <a-marker preset='hiro'>
-  <a-video src="#video" width='10' height='6' position='0 1 -1'> </a-video>
+  <a-video src="#video" width="5" height="3" position="0 1 -1"> </a-video>
 </a-marker>
 <a-entity camera></a-entity>
 </a-scene>
